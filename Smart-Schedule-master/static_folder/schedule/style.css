@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+}
+#menu {
+	display: block;
+	width: 100%;
+	height: 90px;
+	color: white;
+	background-color: #64006d;
+	
+}
+
+#menu a {
+	text-align: center;
+	float: right;
+	display: block;
+	padding: 15px;
+	height: 60px;
+	line-height: 60px;
+}
+
+#header {
+	text-align: center;
+	float: left;
+	font-size: 60px;
+	display: block;
+	padding: 15px;
+	height: 60px;
+	padding-left: 50px;
+	line-height: 60px;
+}
+
+#menu a:hover {
+	background-color: #700070;
+}
+
+#menu a:link, #menu a:visited, #menu a:hover, #menu a:active {
+	text-decoration: none;
+	color: white;
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	background-color: #999;
+}
+
+table {
+	border-spacing: 0;
+}
+table tr:nth-child(odd) {
+    background-color: #aa00aa;
+}
+
+table tr:nth-child(even) {
+    background-color: #cc00cc;
+}
+#schedule {
+	width: 100%;
+}
+
+.shadow {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title {
+    padding: 2px 16px;
+    background-color: #900090;
+    color: white;
+}
+
+.popup {padding: 2px 16px;}
+

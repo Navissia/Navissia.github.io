@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Smart Schedule</title>
+		<!-- link script, css, jquery -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		 -->
+		<link rel="stylesheet" href="resources/index/style.css">
+	</head>
+	<body>	
+ 		<div id="menu">
+			<div id="header">OG ORGANIZER</div>
+			<a>About Us</a>
+			<a>Contact Us</a>
+			<a href="{{ account_link }}">
+				{% if logged_in %} Logout
+				{% else %} Login
+				{% endif %}
+			</a>
+		</div>
+		<div id="top">
+			<div id="about">
+				One of the main problems when it comes to college students is trying to properly manage their time. This is one of the main problems because between classes, sports, and homework it is hard to find time to do other things, which is why with our app you can input things that you want to or have to do that way you can plan your days accordingly.
+			</div>
+			<div id="right">
+				<a href="/schedule"><button id="startSchedulingButton">Start<br>Scheduling</button></a>
+			</div>
+		</div>
+	</body>
+</html>
